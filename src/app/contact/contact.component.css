@@ -1,0 +1,10 @@
+.line{
+    background-color: #2C3E50;
+    height: 4px;
+    width: 80px;
+}
+label{
+    color: #1abc9c;
+    margin-bottom: 7px;
+    transition: .6s top;
+}

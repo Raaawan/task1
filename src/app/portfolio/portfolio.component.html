@@ -1,0 +1,71 @@
+<div class="portfolio py-5 position-relative">
+    <div class="container py-3">
+        <h2 class="text-center text-uppercase  fs-1 fw-bolder py-2">portfolio component</h2>
+        <div class="lines d-flex align-items-center justify-content-center mb-4">
+            <div class="line me-3">
+            </div>
+            <i class="fa-solid fa-star me-3"></i>
+            <div class="line me-3">
+            </div>
+        </div>
+        <div class="portofoli-cards">
+            <div class="row">
+                <div class="col-md-4 g-5" (click)="open('./assets/images/poert1.png')">
+                    <div class="image rounded-3 overflow-hidden position-relative" >
+                    <img src="./assets/images/poert1.png" class="w-100 rounded-3" alt="poert1 image" >
+                    
+                    <div class="layer rounded-3 position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div></div>
+                </div>
+                <div class="col-md-4 g-5" (click)="open('./assets/images/port2.png')" >
+                    <div class="image rounded-3 overflow-hidden position-relative">
+                    <img src="./assets/images/port2.png" class="w-100 rounded-3" alt="poert1 image">
+                    
+                    <div class="layer rounded-3 position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div></div>
+                </div>
+                <div class="col-md-4 g-5" (click)="open('./assets/images/port3.png')">
+                    <div class="image rounded-3 overflow-hidden position-relative">
+                    <img src="./assets/images/port3.png" class="w-100 rounded-3" alt="poert1 image">
+                    
+                    <div class="layer rounded-3 position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div></div>
+                </div>
+                <div class="col-md-4 g-5" (click)="open('/assets/images/poert1.png')">
+                    <div class="image rounded-3 overflow-hidden position-relative">
+                    <img src="./assets/images/poert1.png" class="w-100 rounded-3" alt="poert1 image">
+                    
+                    <div class="layer rounded-3 position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div></div>
+                </div>
+                <div class="col-md-4 g-5" (click)="open('./assets/images/port2.png')">
+                    <div class="image rounded-3 overflow-hidden position-relative">
+                    <img src="./assets/images/port2.png" class="w-100 rounded-3" alt="poert1 image">
+                    
+                    <div class="layer rounded-3 position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div></div>
+                </div>
+                <div class="col-md-4 g-5" (click)="open('./assets/images/port3.png')">
+                    <div class="image rounded-3 overflow-hidden position-relative">
+                    <img src="./assets/images/port3.png" class="w-100 rounded-3" alt="poert1 image">
+                    
+                    <div class="layer rounded-3 position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (isCliciked==true) {
+    <div class="lightbox-container d-flex justify-content-center align-items-center position-absolute start-0 w-100 top-0 h-100 ">
+        <img [src]="imageSrc" alt="" class="w-50 mt-3 mx-auto">
+        <i class="fa-solid fa-x " (click)="close()"></i>
+    </div>
+}

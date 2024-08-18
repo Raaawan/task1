@@ -1,0 +1,18 @@
+.line{
+    background-color: #2C3E50;
+    height: 4px;
+    width: 80px;
+}
+
+.layer{
+    background-color: #1abc9ce6;
+    opacity: 0;
+    cursor: pointer;
+    transition: .5s opacity;
+}
+.layer:hover{
+    opacity: 1;
+} 
+.lightbox-container i{
+    cursor: pointer;
+}
